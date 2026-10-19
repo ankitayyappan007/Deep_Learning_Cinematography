@@ -1,0 +1,71 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local datasets and extracted frames
+data/raw/
+data/interim/
+data/processed/camera_movement/
+data/processed/camera_movement_extraction_test/
+data/processed/camera_movement_frames/
+data/processed/camera_movement_frames_5/
+data/processed/shot_scale_frames/
+data/processed/shot_scale_test_frames/
+data/processed/shot_scale_validation_frames/
+data/processed/shot_type/
+
+# Training-only checkpoints and logs
+data/processed/models/*/latest_checkpoint.pt
+data/processed/models/*/training_history.csv
+data/processed/models/*/training_summary.json
+
+# Exclude alternative experiment models from deployment
+data/processed/models/shot_scale_cnn_augmented/
+data/processed/models/camera_movement_cnn_balanced_sampling/
+
+# Local backups and temporary files
+backups/
+*.bak
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+# Keep datasets and generated validation frames out of Git
+data/staging/
+data/validation/
+data/media/
+
+# Exclude model weights and checkpoints
+*.pt
+*.pth
+
+# Exclude generated experiment results
+data/processed/models/experiment_comparison/
+
+# Older app versions
+app/streamlit_app_before_editorial.py
+app/streamlit_app_before_final_upgrade.py
+# Dataset archives and local annotation files
+data/*.zip
+data/movieshots/
+
+# Generated manifests, extraction reports, and frame requests
+data/processed/*.csv
+data/requests/
+
+# Generated model evaluation outputs
+data/processed/models/*/classification_report.csv
+data/processed/models/*/config.json
+data/processed/models/*/confusion_matrix.csv
+data/processed/models/*/test_evaluation.json
+data/processed/models/*/test_predictions.csv
+data/processed/models/*/test_evaluation/
