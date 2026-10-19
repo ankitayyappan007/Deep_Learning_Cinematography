@@ -44,9 +44,13 @@ data/staging/
 data/validation/
 data/media/
 
-# Exclude model weights and checkpoints
+# Exclude model weights and checkpoints by default
 *.pt
 *.pth
+
+# Allow only the two checkpoints required by the Streamlit app
+!data/processed/models/shot_scale_cnn/best_model.pt
+!data/processed/models/camera_movement_cnn/best_model.pt
 
 # Exclude generated experiment results
 data/processed/models/experiment_comparison/
