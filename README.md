@@ -11,6 +11,20 @@ This project explores CNN-based approaches to understanding cinematography throu
 
 The project includes an interactive Streamlit application for exploring predictions and experiments comparing baseline, augmented, and balanced-sampling CNN models.
 
+## Project Pipeline
+
+The project follows these main stages:
+
+1. **Dataset Preparation:** Use MovieShots-derived annotations and prepare the data for the classification tasks.
+2. **Preprocessing:** Extract and prepare frames for model training and evaluation.
+3. **Model Training:** Train CNN models for shot-scale and camera-movement classification.
+4. **Model Evaluation:** Compare experiments using test accuracy, macro F1-score, weighted F1-score, and per-class metrics where available.
+5. **Interactive Exploration:** Use the Streamlit application to explore the project's classification features and predictions.
+
+The project evaluates separate shot-scale and camera-movement models. Their results are assessed independently because they use different label sets and evaluation samples.
+
+
+
 ## Application Screenshots
 
 ### Home Page
