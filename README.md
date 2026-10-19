@@ -1,3 +1,67 @@
+# Deep Learning-Based Cinematography Analysis
+
+A deep learning project for automatic cinematography analysis using convolutional neural networks (CNNs), focusing on shot-scale classification and camera-movement classification using MovieShots-derived data.
+
+## Project Overview
+
+This project explores CNN-based approaches to understanding cinematography through two classification tasks:
+
+- **Shot-Scale Classification:** Classifies frames into five shot-scale categories: `CS`, `ECS`, `FS`, `LS`, and `MS`.
+- **Camera-Movement Classification:** Classifies camera movement using the original MovieShots labels: `Static`, `Motion`, `Push`, `Pull`, and `Multi_movement`.
+
+The project includes an interactive Streamlit application for exploring predictions and experiments comparing baseline, augmented, and balanced-sampling CNN models.
+
+## Application Screenshots
+
+### Home Page
+
+![Cinematography Analysis Home Page](screenshots/home.png)
+
+### Shot-Scale Explorer
+
+![Shot-Scale Explorer](screenshots/shot-scale-explorer.png)
+
+### Camera-Movement Explorer
+
+![Camera-Movement Explorer](screenshots/camera-movement-explorer.png)
+
+## Project Structure
+
+- `app/`: Streamlit application and supporting interface modules
+- `scripts/`: Model training, evaluation, and experiment comparison scripts
+- `src/`: Data preparation and frame extraction utilities
+- `screenshots/`: Application screenshots
+- `data/`: Local datasets, manifests, and generated artifacts, not included in this public repository
+- `requirements.txt`: Python dependencies
+
+## Installation and Usage
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ankitayyappan007/Deep_Learning_Cinematography.git
+cd Deep_Learning_Cinematography
+```
+
+Install the dependencies:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+Run the Streamlit application:
+
+```powershell
+python -m streamlit run app/streamlit_app.py
+```
+
+Open the local URL displayed in the terminal, usually `http://localhost:8501`.
+
+**Note:** The dataset and trained model weights are not included in this public repository. Depending on the selected feature, the application may require the appropriate local data and model artifacts.
+
+
+
+
 
 ## Experimental Results
 
